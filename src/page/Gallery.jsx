@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./gallery.css";
 
@@ -22,23 +22,36 @@ function Gallery() {
   }, []);
 
   const getImgData = (imgData) => {
-    navigate("/imgdetails", {data: imgData});
+    navigate("/imgdetails", {
+      state: {
+        largeImageURL: imgData.largeImageURL,
+        user: imgData.user,
+        tags: imgData.tags,
+        views: imgData.views,
+        downloads: imgData.downloads,
+        imageSize: imgData.imageSize,
+      },
+    });
   };
 
   return (
     <>
       <div className="gallery">
-        {imgGallery.map((item, index) => {
-          return (
-            <div
-              className="images"
-              key={index}
-              onClick={() => getImgData(item)}
-            >
-              <img src={item.webformatURL} className="imgBox" alt="" />
-            </div>
-          );
-        })}
+        {imgGallery ? (
+          imgGallery.map((item, index) => {
+            return (
+              <div
+                className="images"
+                key={index}
+                onClick={() => getImgData(item)}
+              >
+                <img src={item.webformatURL} className="imgBox" alt="" />
+              </div>
+            );
+          })
+        ) : (
+          <h1>Images are not available!</h1>
+        )}
       </div>
     </>
   );
