@@ -16,7 +16,7 @@
 }
 
 .gallery .images:hover {
-  filter: opacity(0.8);
+  filter: opacity(0.7);
 }
 
 .imgBox {
