@@ -6,6 +6,7 @@
   -moz-column-width: 50%;
   column-width: 50%;
   padding: 0 15px;
+  margin-top: 10px;
 }
 
 .imgBox {

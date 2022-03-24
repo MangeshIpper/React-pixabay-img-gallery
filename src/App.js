@@ -2,11 +2,12 @@ import "./App.css";
 import Gallery from "./page/Gallery";
 import ImageDetails from "./page/imageDetails/ImageDetails";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
   return (
     <>
-    <h1>Pixabay Image Gallery</h1>
+      <Topbar />
       <Router>
         <Routes>
           <Route path="/imgdetails" element={<ImageDetails />} />
