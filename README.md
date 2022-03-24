@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [Objective](#section1)<br>
+2. [Importing Packages](#section2)<br>
+3. [UI view for Desktop and Mobile view](#section3)<br>
+ - 3.1 [UI for Desktop View](#section301)<br>
+  - 3.2 [UI for Mobile view](#section302)<br>
 
-## Available Scripts
 
-In the project directory, you can run:
+  ## 1. Objective <a id=section1></a>
 
-### `npm start`
+In this react project I have used JSX to build pixabay image gallery application. I have used default pixabay API to fetch data along with initial rendering used useEffect hook and stored in array used useState hooks of react library. Moreover, applyed map function on array and create grid view in the page, applied css to look attractive on hover of image opacity added to recognize image selected with pointer on. On click of any image navigate to new page with particular image information, implemented routing, created new page to show selected image and its information. Implemented responsive view for mobile, tablet, and desktop screen. Added fixed topbar with logo and user image.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project you have to install following libraries provided in section 2.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 2. Importing Packages  <a id=section2></a>
 
-### `npm test`
+To build the UI, routing, services of this project I have used axios, react-router-dom, react library, material icon but removed later on from libraries. You have to install following commands to run this project,
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1: npm install axios, 
+2: npm i react-router-dom
+3: npm install @mui/material @emotion/react @emotion/styled @mui/icons-material  (If you want to extend this project suggested library)
 
-### `npm run build`
+## 3. UI view for Desktop and Mobile view<a id=section3></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3.1 UI for Desktop View <a id=section301></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/25785047/160004933-fb76f919-ff3b-4284-9cc5-263ce59983ec.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/25785047/160005113-9fdd66b2-2da8-4652-8f1d-4fa5166721f7.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3.2 UI for Mobile view <a id=section302></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/25785047/160005447-e143cfc6-f0b4-4233-9a7b-aa206347bce7.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://user-images.githubusercontent.com/25785047/160005778-2774bd93-df2a-4ffc-8656-f1ad8df0a0cc.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![image](https://user-images.githubusercontent.com/25785047/160005988-7fdb1ca1-cc00-43bd-8b65-6376004acd61.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![image](https://user-images.githubusercontent.com/25785047/160006289-8e99c405-6436-48aa-835c-0953b03c046d.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+# Thank you.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Checkout more details about me on LinkedIn: https://www.linkedin.com/in/mangeshipper/
