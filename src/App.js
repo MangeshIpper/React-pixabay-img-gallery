@@ -4,6 +4,8 @@ import ImageDetails from "./page/imageDetails/ImageDetails";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Topbar from "./components/topbar/Topbar";
 
+//Added topbar comman component for all pages, added routing for change pages.
+
 function App() {
   return (
     <>

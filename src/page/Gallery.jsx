@@ -7,6 +7,8 @@ function Gallery() {
   const [imgGallery, setImageGallery] = useState([]);
   const navigate = useNavigate();
 
+  //Fetch pixabay data from API and stored in array for display images.
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,6 +25,8 @@ function Gallery() {
     fetchData();
   }, []);
 
+  // On click of image share that object in next page for display image information.
+
   const getImgData = (imgData) => {
     navigate("/imgdetails", {
       state: {
@@ -35,6 +39,8 @@ function Gallery() {
       },
     });
   };
+
+  // Added ternary operator to display images if present else show message.
 
   return (
     <>
