@@ -13,7 +13,9 @@ function Gallery() {
         const { data: response } = await axios.get(
           "https://pixabay.com/api/?key=6473511-0417f2cad683f1bee54cafe15&q=yellow+flowers&image_type=photo"
         );
-        setImageGallery(response.hits);
+        if(response) {
+            setImageGallery(response.hits);
+        }
       } catch (error) {
         console.error(error.message);
       }
@@ -40,7 +42,7 @@ function Gallery() {
         {imgGallery ? (
           imgGallery.map((item, index) => {
             return (
-              <div
+              <div data-testid="resolved"
                 className="images"
                 key={index}
                 onClick={() => getImgData(item)}
@@ -50,7 +52,7 @@ function Gallery() {
             );
           })
         ) : (
-          <h1>Images are not available!</h1>
+          <h1 data-testid="notAvailable">Images are not available!</h1>
         )}
       </div>
     </>
